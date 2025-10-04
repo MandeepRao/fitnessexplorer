@@ -10,7 +10,7 @@ import User from './pages/User.jsx'
 import { AuthProvider } from './ContextProvider/ContextProvider.jsx'
 
 createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
+  <BrowserRouter basename="/fitnessexplorer/">
     <AuthProvider>
       <Routes>
         <Route path="/" element={<App />}>
