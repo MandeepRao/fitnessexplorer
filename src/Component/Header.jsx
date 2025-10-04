@@ -25,9 +25,10 @@ function Header() {
 
                 <Link className="cursor-pointer" to='/' onClick={closeMobileDropDown} >
                     <img alt="headerIcon"
-                        src='src\assets\header.jpg'
+                        src='./assets/header.jpg'
                         className='h-12 '
-                        loading="lazy" />
+                        loading="lazy"
+                    />
                 </Link>
 
                 <div className="hidden md:flex space-x-8">

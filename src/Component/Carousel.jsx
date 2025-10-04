@@ -1,8 +1,8 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { useContextData } from '../ContextProvider/ContextProvider';
-import { LeftArrowIcon, RightArrowIcon } from '../assets/svg';
-import { capitalizeWords } from '../misc/capitalizeFun';
+import { capitalizeWords, spaceTrimFun } from '../misc/capitalizeFun';
+import { LeftArrowIcon, RightArrowIcon } from '../svg';
 
 const VISIBLE_SLIDES = 3;
 const TRANSITION_MS = 700;
@@ -87,7 +87,7 @@ const Carousel = ({ slides = [], autoPlayInterval = 2000 }) => {
                         <div
                             className="h-full w-full relative rounded-lg overflow-hidden"
                             style={{
-                                backgroundImage: `url(src/assets/${slide?.name.split(' ').join('')}.jpg)`,
+                                backgroundImage: `url(./assets/${spaceTrimFun(slide?.name)}.jpg)`,
                                 backgroundSize: 'cover',
                                 backgroundPosition: 'center',
                                 backgroundColor: '#be9099ff',

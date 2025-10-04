@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { DumbbellIcon, LockIcon, MailIcon, UserIcon } from '../assets/svg';
 import UserInputField from '../Component/UserInputField';
 import { useNavigate } from 'react-router-dom';
 import Loader from '../Component/Loader';
 import { useContextData } from '../ContextProvider/ContextProvider';
+import { DumbbellIcon, LockIcon, MailIcon, UserIcon } from '../svg';
 
 const User = () => {
     const [formData, setFormData] = useState({

@@ -11,3 +11,10 @@ export function capitalizeWords(str = '') {
     });
     return capitalizedWords.join(' ');
 }
+
+export function spaceTrimFun(str) {
+    if (!str) {
+        return;
+    }
+    return str.split(' ').join('');
+}

@@ -19,7 +19,7 @@ const HeroSection = () => {
             <div className="md:w-1/2 flex justify-center items-center relative 
               h-full lg:h-[300px] 
               min-h-[120px] max-h-[400px] px-10">
-                <img src="src/assets/banner.gif" alt="Workout animation" loading="lazy" className="w-full h-full object-cover rounded-lg shadow-xl" />
+                <img src="./assets/banner.gif" alt="Workout animation" loading="lazy" className="w-full h-full object-cover rounded-lg shadow-xl" />
             </div>
 
         </div>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { XIcon } from '../assets/svg';
+import { XIcon } from '../svg';
 
 
 export const CustomModal = ({ visiblity, header = '', text = '', oncloseFun = () => { } }) => {
